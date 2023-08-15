@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="page1.css">
+<div class="header">
+    <h1>Spot the Differences</h1>
+    <p5> Find 5 differences..</p5>
+</div>
+<div class="info"><p5>Click on the objects in  first image which is missing in secong image</p5></div>
+    <div id="parentReal">
+        <div id="child"></div>
+        <div id="childA"></div>
+        <div id="childB"></div>
+        <div id="childC"></div>
+        <div id="childD"></div>
+    </div>
+    <div id="parentUnreal">
+      
+    </div>
+    <div class="hint">
+        <button class="btn">Click for answers 👉</button>
+        <p id="showMyhint"></p>
+    </div>
+    <div><h><center>Copyright &copy Prabhat Yadav|2023|Game</center></h></div>
+
+    <script>
+//for child......................................................        
+        const childId= document.getElementById('child');
+       
+childCall=()=>{
+alert("Congrats!! You got it,find more..");
+
+}
+        childId.addEventListener('click',childCall);
+        
+
+//for childA........................................................
+        const childIdA= document.getElementById('childA');
+      
+childCallA=()=>{
+alert("Well done!!,You are awesome");
+
+}
+        childIdA.addEventListener('click',childCallA);
+//for childB.......................................................
+        const childIdB= document.getElementById('childB');
+      
+childCallB=()=>{
+alert("Hurray!!You got it!!");
+
+}
+        childIdB.addEventListener('click',childCallB);
+//for childC.......................................................        
+const childIdC= document.getElementById('childC');
+      
+      childCallC=()=>{
+      alert("Eagle's eye!!");
+      
+      }
+              childIdC.addEventListener('click',childCallC);
+//for childC.......................................................
+const childIdD= document.getElementById('childD');
+      
+      childCallD=()=>{
+      alert("wow!!");
+      
+      }
+              childIdD.addEventListener('click',childCallD);
+//hint..................................................
+const myName=document.querySelector('#showMyhint');
+const btn=document.querySelector('.btn')
+ 
+const showMyName= () =>{
+    myName.innerHTML="Loading..."
+setTimeout(()=>{
+ myName.innerHTML="1)An additional patch of grass is missing,  2)An additional branch of the tree is missing,3)An additional twig of grass can be seen.4)There is a ventilation gap present in the first image. 5)The pattern of the roof of the hut is different.    "
+},1000 )
+}
+ 
+
+
+btn.addEventListener('click',showMyName);
+
+    </script>
+</body>
+</html>
